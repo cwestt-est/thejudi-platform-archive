@@ -1,0 +1,19 @@
+uuid: 310013b0-1893-4e97-bdf1-221dc61cb010
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_url
+    - node.type.topic
+id: node.topic.field_youtube_url
+field_name: field_youtube_url
+entity_type: node
+bundle: topic
+label: 'Youtube URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

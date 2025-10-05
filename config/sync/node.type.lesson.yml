@@ -1,0 +1,11 @@
+uuid: f53826f3-19ae-465f-ad01-c7d4d26ad9ed
+langcode: en
+status: true
+dependencies: {  }
+name: Lesson
+type: lesson
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

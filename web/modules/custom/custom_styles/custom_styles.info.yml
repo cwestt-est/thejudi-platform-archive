@@ -1,0 +1,6 @@
+name: 'Custom Styles'
+type: module
+description: 'Adds custom styles to pages.'
+core_version_requirement: ^10
+package: Custom
+version: 1.0

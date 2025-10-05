@@ -1,0 +1,29 @@
+uuid: 8ee8395c-204d-40b4-bb6f-ade0c0b0a3a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tag
+    - node.type.course
+    - taxonomy.vocabulary.tags
+id: node.course.field_tag
+field_name: field_tag
+entity_type: node
+bundle: course
+label: Tag
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

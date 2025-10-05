@@ -1,0 +1,22 @@
+uuid: f26b6271-7d7f-4aac-a8c9-6b7aeadc7dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tweets
+id: node.tweets.promote
+field_name: promote
+entity_type: node
+bundle: tweets
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

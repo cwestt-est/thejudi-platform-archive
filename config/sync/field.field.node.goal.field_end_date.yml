@@ -1,0 +1,19 @@
+uuid: 0e0e200b-d2ed-47c7-8d87-62af2b5b1a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.goal
+id: node.goal.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: goal
+label: 'End Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

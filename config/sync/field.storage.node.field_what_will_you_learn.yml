@@ -1,0 +1,19 @@
+uuid: 7a72e9c5-edfd-4c27-95bd-0cb661e2e671
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_what_will_you_learn
+field_name: field_what_will_you_learn
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

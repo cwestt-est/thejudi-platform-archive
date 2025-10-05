@@ -1,0 +1,29 @@
+uuid: 592cf98a-da71-49ec-ac39-af95ccf1561f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reel_video
+    - media.type.video
+    - node.type.reels
+id: node.reels.field_reel_video
+field_name: field_reel_video
+entity_type: node
+bundle: reels
+label: 'Reel Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

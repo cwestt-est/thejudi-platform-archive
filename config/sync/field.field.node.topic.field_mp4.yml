@@ -1,0 +1,27 @@
+uuid: 77e200a2-ce54-4f09-ad11-0b9e0d10d423
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mp4
+    - node.type.topic
+  module:
+    - file
+id: node.topic.field_mp4
+field_name: field_mp4
+entity_type: node
+bundle: topic
+label: MP4
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'mp4/[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,27 @@
+uuid: d31b9fb1-3b20-4757-91d9-65cc302e6031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_word
+    - node.type.topic
+  module:
+    - file
+id: node.topic.field_word
+field_name: field_word
+entity_type: node
+bundle: topic
+label: Word
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'word/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx'
+  max_filesize: ''
+  description_field: false
+field_type: file

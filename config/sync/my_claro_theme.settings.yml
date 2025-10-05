@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: x0R-zbXVRaKbjm2ovdpc6JLOs_2GjNQBqM1Ed2dbs4M
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+favicon:
+  use_default: true

@@ -1,0 +1,24 @@
+uuid: 43a48fb0-2974-49ad-9db3-5ce23152bcf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_best_method_for_engagement
+    - filter.format.html
+    - node.type.tweets
+  module:
+    - text
+id: node.tweets.field_best_method_for_engagement
+field_name: field_best_method_for_engagement
+entity_type: node
+bundle: tweets
+label: 'Best Method for Engagement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

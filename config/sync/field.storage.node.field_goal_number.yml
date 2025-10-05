@@ -1,0 +1,20 @@
+uuid: d82d3edb-6f1e-44ca-b509-33d07441e6e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_goal_number
+field_name: field_goal_number
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

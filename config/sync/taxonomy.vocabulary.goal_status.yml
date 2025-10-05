@@ -1,0 +1,9 @@
+uuid: 0cbf0102-4262-4888-b061-2053933940fa
+langcode: en
+status: true
+dependencies: {  }
+name: 'Goal Status'
+vid: goal_status
+description: null
+weight: 0
+new_revision: false

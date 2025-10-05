@@ -1,0 +1,20 @@
+uuid: c5d8a55b-1d36-4b53-898c-446d1cd951e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_reel_video
+field_name: field_reel_video
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: c287bebe-76a1-485c-90f0-f2c7aada018f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_summary
+    - filter.format.html
+    - node.type.topic
+  module:
+    - text
+id: node.topic.field_topic_summary
+field_name: field_topic_summary
+entity_type: node
+bundle: topic
+label: 'Topic Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

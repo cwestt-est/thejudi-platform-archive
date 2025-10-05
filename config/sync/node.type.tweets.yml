@@ -1,0 +1,11 @@
+uuid: 1d71a5f6-ec4d-403c-a5fb-578657cdfb90
+langcode: en
+status: true
+dependencies: {  }
+name: Tweets
+type: tweets
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

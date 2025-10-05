@@ -1,0 +1,36 @@
+uuid: 5953ce9d-cbce-456e-a8b3-4a46a3eda7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lesson.body
+    - field.field.node.lesson.field_code
+    - field.field.node.lesson.field_course_ref
+    - field.field.node.lesson.field_wordpress_id
+    - node.type.lesson
+  module:
+    - text
+    - user
+id: node.lesson.teaser
+targetEntityType: node
+bundle: lesson
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_code: true
+  field_course_ref: true
+  field_wordpress_id: true

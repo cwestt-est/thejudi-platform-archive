@@ -1,0 +1,11 @@
+uuid: f7565cc0-56b2-43f7-ab1d-d60239dd4984
+langcode: en
+status: true
+dependencies: {  }
+name: Reels
+type: reels
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

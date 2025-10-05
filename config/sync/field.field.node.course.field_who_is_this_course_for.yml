@@ -1,0 +1,24 @@
+uuid: 50f7ba2e-1d93-4c96-a019-4becc2b5464a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_who_is_this_course_for
+    - filter.format.html
+    - node.type.course
+  module:
+    - text
+id: node.course.field_who_is_this_course_for
+field_name: field_who_is_this_course_for
+entity_type: node
+bundle: course
+label: 'Who is this course for?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

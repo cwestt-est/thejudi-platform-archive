@@ -1,0 +1,42 @@
+uuid: 04c34cb7-83a4-497c-803f-4c1e0d952ac2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.goal.body
+    - field.field.node.goal.field_current_number
+    - field.field.node.goal.field_end_date
+    - field.field.node.goal.field_goal_number
+    - field.field.node.goal.field_goal_status
+    - field.field.node.goal.field_precenage_type
+    - field.field.node.goal.field_start_date
+    - node.type.goal
+  module:
+    - text
+    - user
+id: node.goal.teaser
+targetEntityType: node
+bundle: goal
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_current_number: true
+  field_end_date: true
+  field_goal_number: true
+  field_goal_status: true
+  field_precenage_type: true
+  field_start_date: true

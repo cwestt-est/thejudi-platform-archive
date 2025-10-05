@@ -1,0 +1,34 @@
+uuid: 9640e670-4904-401e-b86e-144c71cde13a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reels.body
+    - field.field.node.reels.field_reel_video
+    - field.field.node.reels.field_topic_related
+    - node.type.reels
+  module:
+    - text
+    - user
+id: node.reels.teaser
+targetEntityType: node
+bundle: reels
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_reel_video: true
+  field_topic_related: true

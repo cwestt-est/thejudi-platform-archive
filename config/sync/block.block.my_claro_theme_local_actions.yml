@@ -1,0 +1,20 @@
+uuid: fbf17ca1-9490-4fc8-ae5e-3bd2e2787685
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_claro_theme
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: my_claro_theme_local_actions
+theme: my_claro_theme
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

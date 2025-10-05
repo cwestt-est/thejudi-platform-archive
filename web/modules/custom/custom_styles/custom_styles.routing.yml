@@ -1,0 +1,7 @@
+custom_styles.gantt_page:
+  path: '/gantt'
+  defaults:
+    _controller: '\Drupal\custom_styles\Controller\GanttController::ganttPage'
+    _title: 'Gantt Chart'
+  requirements:
+    _permission: 'access content'

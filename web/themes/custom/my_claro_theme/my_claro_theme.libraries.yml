@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - claro/global-styling
+lesson-toggle:
+  version: 1.0.0
+  js:
+    js/lesson-toggle.js: {}
+  dependencies:
+    - core/drupal

@@ -1,0 +1,24 @@
+uuid: 7610c75d-21ae-4ddb-a5b1-d2a4bc71297c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_why_must_you_take_this_cou
+    - filter.format.html
+    - node.type.course
+  module:
+    - text
+id: node.course.field_why_must_you_take_this_cou
+field_name: field_why_must_you_take_this_cou
+entity_type: node
+bundle: course
+label: 'Why must you take this course?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+field_type: text_long

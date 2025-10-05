@@ -1,0 +1,19 @@
+uuid: 8f94bd4b-1a53-44b0-a039-ec2a68bb436f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wordpress_id
+    - node.type.course
+id: node.course.field_wordpress_id
+field_name: field_wordpress_id
+entity_type: node
+bundle: course
+label: 'Wordpress ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

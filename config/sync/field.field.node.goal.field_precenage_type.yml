@@ -1,0 +1,21 @@
+uuid: c7b1ca17-681c-4bbf-b129-6e0d07072d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precenage_type
+    - node.type.goal
+id: node.goal.field_precenage_type
+field_name: field_precenage_type
+entity_type: node
+bundle: goal
+label: 'Precenage Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Precentage
+  off_label: Number
+field_type: boolean

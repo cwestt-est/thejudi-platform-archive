@@ -1,0 +1,26 @@
+uuid: f565fcc4-b356-4bdb-92a3-cfbb866bab8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.html
+    - node.type.reels
+  module:
+    - text
+id: node.reels.body
+field_name: body
+entity_type: node
+bundle: reels
+label: Snippet
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - html
+field_type: text_with_summary

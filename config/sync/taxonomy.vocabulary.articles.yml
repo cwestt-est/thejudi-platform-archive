@@ -1,0 +1,9 @@
+uuid: f9078fe2-3fd5-4832-961c-b2149c86a6d1
+langcode: en
+status: true
+dependencies: {  }
+name: Articles
+vid: articles
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: 5b3feb00-6097-41e9-a776-e4a8fbfeac13
+name: 'Media system'
+mail: support@thejudiacademy.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /all-courses
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

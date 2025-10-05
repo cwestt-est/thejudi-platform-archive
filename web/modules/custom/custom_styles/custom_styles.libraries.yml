@@ -1,0 +1,20 @@
+custom-styles:
+  version: 1.x
+  css:
+    theme:
+      css/custom-styles.css: {}
+      https://unpkg.com/frappe-gantt@0.5.0/dist/frappe-gantt.css: {}
+  js:
+    https://unpkg.com/frappe-gantt/dist/frappe-gantt.min.js: {}
+    https://unpkg.com/frappe-gantt@0.5.0/dist/frappe-gantt.min.js: {}
+    js/gantt-init.js: {}  # Your custom JS for fetching/rendering
+  dependencies:
+    - core/drupal
+
+gin-toolbar-override:
+  version: 1.x
+  css:
+    theme:
+      css/gin-toolbar-override.css: {}
+  dependencies:
+    - gin/gin

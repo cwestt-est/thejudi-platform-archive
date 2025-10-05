@@ -1,0 +1,7 @@
+body.gin--horizontal-toolbar.user-not-admin {
+   padding-block-start: 0 !important;
+}
+
+.user-not-admin #toolbar-administration {
+   display: none;
+}

@@ -1,0 +1,64 @@
+uuid: 199ec4a2-9644-4e50-aa5c-04b89d1aabcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tweets.body
+    - field.field.node.tweets.field_best_method_for_engagement
+    - field.field.node.tweets.field_topic_related
+    - node.type.tweets
+  module:
+    - text
+id: node.tweets.default
+targetEntityType: node
+bundle: tweets
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_best_method_for_engagement:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_topic_related:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

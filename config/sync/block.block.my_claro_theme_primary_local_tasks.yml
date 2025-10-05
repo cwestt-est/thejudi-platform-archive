@@ -1,0 +1,22 @@
+uuid: b6bb81a2-56b7-459a-9296-037f0bb26d8a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_claro_theme
+_core:
+  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
+id: my_claro_theme_primary_local_tasks
+theme: my_claro_theme
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

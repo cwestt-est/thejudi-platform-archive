@@ -1,0 +1,20 @@
+name: My Claro Theme
+type: theme
+description: 'Custom child theme based on Claro'
+package: Custom
+core_version_requirement: ^10 || ^11
+base theme: claro
+
+libraries:
+  - my_claro_theme/global-styling
+
+regions:
+  header: Header
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'Left sidebar'

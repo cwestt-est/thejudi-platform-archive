@@ -1,0 +1,13 @@
+uuid: ec41d70c-2b49-40ff-baab-181b0b1c4a84
+langcode: en
+status: true
+dependencies: {  }
+id: bootsrap
+label: Bootsrap
+code: |
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

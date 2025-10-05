@@ -1,0 +1,48 @@
+uuid: 311b609f-19f8-4d9e-8d7a-97791155ad36
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.course.body
+    - field.field.node.course.field_code
+    - field.field.node.course.field_course_summary
+    - field.field.node.course.field_level
+    - field.field.node.course.field_tag
+    - field.field.node.course.field_weight
+    - field.field.node.course.field_what_will_you_learn
+    - field.field.node.course.field_who_is_this_course_for
+    - field.field.node.course.field_why_must_you_take_this_cou
+    - field.field.node.course.field_wordpress_id
+    - node.type.course
+  module:
+    - text
+    - user
+id: node.course.teaser
+targetEntityType: node
+bundle: course
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_code: true
+  field_course_summary: true
+  field_level: true
+  field_tag: true
+  field_weight: true
+  field_what_will_you_learn: true
+  field_who_is_this_course_for: true
+  field_why_must_you_take_this_cou: true
+  field_wordpress_id: true

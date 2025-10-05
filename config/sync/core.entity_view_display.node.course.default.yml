@@ -1,0 +1,195 @@
+uuid: 72403acb-ff02-4151-9a2c-2fa0c4475419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.course.body
+    - field.field.node.course.field_code
+    - field.field.node.course.field_course_summary
+    - field.field.node.course.field_level
+    - field.field.node.course.field_tag
+    - field.field.node.course.field_weight
+    - field.field.node.course.field_what_will_you_learn
+    - field.field.node.course.field_who_is_this_course_for
+    - field.field.node.course.field_why_must_you_take_this_cou
+    - field.field.node.course.field_wordpress_id
+    - node.type.course
+    - views.view.course_content_block
+  content:
+    - 'block_content:custom:25837b9e-204e-496a-8a88-586c0b896faf'
+  module:
+    - block_content
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          7b25e5cf-aea7-4955-a2d5-3860563da93e:
+            uuid: 7b25e5cf-aea7-4955-a2d5-3860563da93e
+            region: second
+            configuration:
+              id: 'views_block:course_content_block-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c8f5eea5-7685-41f0-8d98-04d43b6d2ff8:
+            uuid: c8f5eea5-7685-41f0-8d98-04d43b6d2ff8
+            region: first
+            configuration:
+              id: 'field_block:node:course:field_tag'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a19ec232-625c-4465-a899-244c6e186959:
+            uuid: a19ec232-625c-4465-a899-244c6e186959
+            region: first
+            configuration:
+              id: 'field_block:node:course:field_who_is_this_course_for'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          eb1e4334-2f0f-4639-80e0-c386c304fc52:
+            uuid: eb1e4334-2f0f-4639-80e0-c386c304fc52
+            region: first
+            configuration:
+              id: 'field_block:node:course:field_why_must_you_take_this_cou'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          eee20157-8056-4610-b33c-e06f90f3c33e:
+            uuid: eee20157-8056-4610-b33c-e06f90f3c33e
+            region: first
+            configuration:
+              id: 'field_block:node:course:field_what_will_you_learn'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          1d8d4880-8714-48ee-85bd-4e64e81093fa:
+            uuid: 1d8d4880-8714-48ee-85bd-4e64e81093fa
+            region: first
+            configuration:
+              id: 'field_block:node:course:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b2dadfe2-4fe5-40be-b663-64a3a52fc22d:
+            uuid: b2dadfe2-4fe5-40be-b663-64a3a52fc22d
+            region: first
+            configuration:
+              id: 'block_content:25837b9e-204e-496a-8a88-586c0b896faf'
+              label: Links
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.course.default
+targetEntityType: node
+bundle: course
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_course_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: first
+  field_tag:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_what_will_you_learn:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_who_is_this_course_for:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_why_must_you_take_this_cou:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_code: true
+  field_level: true
+  field_weight: true
+  field_wordpress_id: true
+  links: true

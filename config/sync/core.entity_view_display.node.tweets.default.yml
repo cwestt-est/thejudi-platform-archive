@@ -1,0 +1,45 @@
+uuid: fbf07f03-1c8c-4896-93fc-238886bd225b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tweets.body
+    - field.field.node.tweets.field_best_method_for_engagement
+    - field.field.node.tweets.field_topic_related
+    - node.type.tweets
+  module:
+    - text
+    - user
+id: node.tweets.default
+targetEntityType: node
+bundle: tweets
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_best_method_for_engagement:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_topic_related:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

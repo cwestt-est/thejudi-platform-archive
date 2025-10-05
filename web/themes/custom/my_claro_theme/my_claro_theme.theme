@@ -1,0 +1,28 @@
+<?php
+function my_claro_theme_preprocess_field(array &$variables) {
+  // Check for your specific field
+  if ($variables['element']['#field_name'] === 'field_youtube_url') {
+    foreach ($variables['items'] as &$item) {
+      // Get raw URL from the field
+      $url = $item['#markup'];
+
+      // Extract YouTube ID from short or long URL
+      if (preg_match('#(?:https?://)?(?:www\.)?youtu(?:\.be/|be\.com/watch\?v=)([^\s&]+)#', $url, $matches)) {
+        $item['youtube_id'] = $matches[1];
+      }
+    }
+  }
+}
+
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function my_claro_theme_views_pre_render(\Drupal\views\ViewExecutable $view) {
+  // Replace 'view_machine_name' with the machine name of your View.
+  // Replace 'display_id' with the machine name of your View's display (e.g., 'page_1', 'block_1').
+  if ($view->id() == 'view_machine_name' && $view->current_display == 'display_id') {
+    // Attach the library.
+    $view->element['#attached']['library'][] = 'my_claro_theme/lesson-toggle';
+  }
+}

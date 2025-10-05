@@ -1,0 +1,19 @@
+uuid: dab25458-f54a-4534-a9a5-f10517f12801
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_why_must_you_take_this_cou
+field_name: field_why_must_you_take_this_cou
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
